@@ -56,6 +56,7 @@ async function showRecipes() {
         form.querySelector("#ingredients").value = rec.ingredients.join("\n");
         form.querySelector("#allergens").value = rec.allergens.join("\n");
         form.querySelector("#studentFriendly").checked = rec.studentFriendly;
+
         await updateRecipe(rec.id, !rec.studentFriendly);
         await showRecipes();
       });
