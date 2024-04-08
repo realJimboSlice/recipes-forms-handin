@@ -20,12 +20,14 @@ async function showRecipes() {
     clone.querySelector("[data-origin]").textContent = rec.origin;
     clone.querySelector("[data-serves]").value = rec.serves;
     // clone.querySelector("[data-description]").textContent = rec.description;
+    clone.querySelector("[data-ingredients]").textContent = rec.ingredients;
     if (rec.diet === "None") {
       clone.querySelector("[data-diet]").textContent =
         "No dietary restrictions";
     } else {
       clone.querySelector("[data-diet]").textContent = rec.diet;
     }
+
     if (rec.studentFriendly) {
       clone.querySelector(".status").hidden = false;
     } else {
