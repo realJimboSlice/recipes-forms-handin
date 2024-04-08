@@ -20,7 +20,9 @@ async function showRecipes() {
     clone.querySelector("[data-origin]").textContent = rec.origin;
     clone.querySelector("[data-serves]").value = rec.serves;
     // clone.querySelector("[data-description]").textContent = rec.description;
-    clone.querySelector("[data-ingredients]").textContent = rec.ingredients;
+    clone.querySelector("[data-ingredients]").innerHTML = rec.ingredients
+      .map((ingredient) => `- ${ingredient}`)
+      .join("<br>");
     if (rec.diet === "None") {
       clone.querySelector("[data-diet]").textContent =
         "No dietary restrictions";
