@@ -331,11 +331,11 @@ legend + .form-group {
   }
 } */
 
-@media (max-width: 420px) {
+/* @media (max-width: 320px) {
   :is(.form-group:not(.inline), fieldset) {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 input:is([type="text"], [type="color"], [type="number"], [type="date"]):not(
     .input-group > *
