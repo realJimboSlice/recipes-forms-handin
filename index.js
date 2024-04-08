@@ -73,6 +73,7 @@ function handleSubmit() {
       studentFriendly: formData.get("studentFriendly"),
       origin: formData.get("origin"),
     });
+    form.reset();
     showRecipes();
   });
 }
