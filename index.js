@@ -46,6 +46,16 @@ async function showRecipes() {
     clone
       .querySelector("button[data-action='update']")
       .addEventListener("click", async () => {
+        const form = document.querySelector("form");
+
+        form.querySelector("#name").value = rec.name;
+        form.querySelector("#description").value = rec.description;
+        form.querySelector("#diet").value = rec.diet;
+        form.querySelector("#origin").value = rec.origin;
+        form.querySelector("#serves").value = rec.serves;
+        form.querySelector("#ingredients").value = rec.ingredients.join("\n");
+        form.querySelector("#allergens").value = rec.allergens.join("\n");
+        form.querySelector("#studentFriendly").checked = rec.studentFriendly;
         await updateRecipe(rec.id, !rec.studentFriendly);
         await showRecipes();
       });
