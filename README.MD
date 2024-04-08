@@ -11,3 +11,7 @@
 ## Correctly implement number served functionality on card √
 
 ## Add profanity and troll filter
+
+## Add ingredient list to card √
+
+## Clear form after submitting √
