@@ -15,3 +15,5 @@
 ## Add ingredient list to card √
 
 ## Clear form after submitting √
+
+## Display recipe values in form when clicking update √
