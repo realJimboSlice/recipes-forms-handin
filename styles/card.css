@@ -71,7 +71,7 @@
   font-size: var(--font-base);
 
   & span:last-of-type {
-    font-weight: 400;
+    font-weight: 800;
   }
 }
 
